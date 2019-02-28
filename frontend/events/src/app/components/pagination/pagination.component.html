@@ -1,0 +1,10 @@
+{{ event_count }}
+{{ pages }}
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" (click)="getEvents(current_page-1)">Previous</a></li>
+        <li *ngFor="let number of pages" class="page-item"><a class="page-link" (click)="getEvents(number+1)">{{number+1}}</a></li>
+        <li class="page-item"><a class="page-link" (click)="getEvents(current_page+1)">Next</a></li>
+    </ul>
+</nav>

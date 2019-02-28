@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-sm" *ngIf="event" >
+        <h3>Event name:</h3>
+        <h1>
+            {{ event.name }}
+        </h1>
+        <app-rsvp  [event]="event" ></app-rsvp>
+        
+        <h3>Description:</h3>
+        <p>{{ event.description }}</p>
+        <h3>Dates:</h3>
+        <p>From {{ event.start_date }} to {{ event.end_date }}</p>
+        <h3>Number of participants</h3>
+        <p>{{event.participant_count}}</p>
+    </div>
+</div>

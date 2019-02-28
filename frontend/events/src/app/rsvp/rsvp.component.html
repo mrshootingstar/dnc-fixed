@@ -1,0 +1,8 @@
+<div class="btn-group btn-group-toggle">
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.no" (click)="rsvp(event.id, 'no')"> No
+  </label>
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.yes" (click)="rsvp(event.id, 'yes')"> Yes
+  </label>
+</div>
